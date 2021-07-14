@@ -1,10 +1,10 @@
 # USubWindow
 
-一项简单的Unity Editor Window布局扩展工具，主要实现了基于树结构的子窗体系统，并通过反射的方式获得各窗口绘制方法，只需简单的添加Attribute即可方便的绘制一个子窗口。
+シンプルなUnityエディターウィンドウレイアウト拡張ツールで、主にツリー構造に基づいたサブフォームシステムを実装し、リフレクションにより各ウィンドウの描画方法を取得します。属性を追加するだけでサブウィンドウを描画できるので便利です。
 
-![示例1](doc/doc1.gif)
+![例1](doc/doc1.gif)
 
-示例：
+例：
 
 ```
 [EWSubWindow("SunWinA", EWSubWindowIcon.Game)]
@@ -26,34 +26,34 @@ private void SubWinA(Rect main)
 
 更新：
 
-1.自定义子窗体图标
+1.サブフォームアイコンをカスタマイズする
 
-2.增加Preview样式和Grid样式
+2.プレビュースタイルとグリッドスタイルを追加する
 
 ![](doc/doc2.gif)
 
-3.helpbox和toolbar
+3.ヘルプボックスとツールバー
 
 ![](doc/doc3.gif)
 
-4.自定义ToolBar和MsgBox
+4.カスタムツールバーとMsgBox
 
-5.保存Layout
+5.レイアウトの保存
 
 ![](doc/doc4.jpg)
 
-5.自定义子窗体Drawer
+5.カスタムサブフォームDrawer
 
-6.子窗体Drawer生命周期
+6.サブフォームのDrawerライフサイクル
 
-7.支持子窗体锁定和自定义右上角下拉框接口
+7.サブフォームのロックをサポートし、右上隅のドロップダウンボックスインターフェイスをカスタマイズします
 
 ![](doc/doc5.png)
 
 ![](doc/doc6.jpg)
 
-6.子窗体序列化支持
+6.サブフォームのシリアル化のサポート
 
-7.自定义MsgBox Drawer
+7.カスタムMsgBox Drawer
 
-8.动态添加窗口
+8.ウィンドウを動的に追加する
