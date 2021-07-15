@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/EditorWindowEx"]
+	path = Assets/Editor/EditorWindowEx
+	url = git@github.com:Sezon2/USubWindow.git
