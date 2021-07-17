@@ -28,7 +28,7 @@ private void SubWinA(Rect main)
 }
 ```
 
-# 更新
+## 更新
 1.自定义子窗体图标  
 2.增加Preview样式和Grid样式
 
