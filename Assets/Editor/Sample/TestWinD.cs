@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Collections;
 
 /// <summary>
-/// SubWindow主工具栏扩展和自定义消息弹框范例
+/// SubWindow-Example of main toolbar extension and custom message popup
 /// </summary>
 public class TestWinD : MDIEditorWindow {
 
@@ -13,7 +13,7 @@ public class TestWinD : MDIEditorWindow {
         Msg2,
     }
 
-    [MenuItem("SubWindow范例/4.主工具栏扩展和自定义消息弹框范例")]
+    [MenuItem("SubWindow example/4.Examples of main toolbar extensions and custom message popups")]
     static void InitWin()
     {
         TestWinA.CreateWindow<TestWinD>();
@@ -25,7 +25,7 @@ public class TestWinD : MDIEditorWindow {
         GUI.Label(new Rect(main.x, main.y, main.width, 20), "SubWinA");
         if (GUI.Button(new Rect(main.x, main.y + 20, main.width, 20), "Btn1"))
         {
-            Debug.Log("按下了Btn1");
+            Debug.Log("Btn1 was pressed");
         }
     }
 
@@ -35,39 +35,39 @@ public class TestWinD : MDIEditorWindow {
         GUI.Label(new Rect(main.x, main.y, main.width, 20), "SubWinB");
         if (GUI.Button(new Rect(main.x, main.y + 20, main.width, 20), "Btn2"))
         {
-            Debug.Log("按下了Btn2");
+            Debug.Log("Btn2 was pressed");
         }
     }
 
-    [EWToolBar("工具/Test1")]
+    [EWToolBar("tools/Test1")]
     private void Test1()
     {
-        Debug.Log("按下了Test1");
+        Debug.Log("Pressed test 1");
     }
 
-    [EWToolBar("工具/Test2")]
+    [EWToolBar("tools/Test2")]
     private void Test2()
     {
-        Debug.Log("按下了Test2");
+        Debug.Log("Pressed test 2");
     }
 
-    [EWToolBar("工具/Test3")]
+    [EWToolBar("tools/Test3")]
     private void Test3()
     {
         ShowMsgBox((int) TestMsg.Msg1, null);
     }
 
 
-    [EWToolBar("工具/Test4")]
+    [EWToolBar("tools/Test4")]
     private void Test4()
     {
-        ShowMsgBox((int)TestMsg.Msg2, "参数xxxx");
+        ShowMsgBox((int)TestMsg.Msg2, "Parameters xxxx");
     }
 
     [EWMsgBox((int) TestMsg.Msg1, 0.2f, 0.2f, 0.6f, 0.6f)]
     private void Msg1(Rect rect, System.Object obj)
     {
-        if (GUI.Button(new Rect(rect.x, rect.y, rect.width, 20),"关闭"))
+        if (GUI.Button(new Rect(rect.x, rect.y, rect.width, 20),"shut down"))
         {
             HideMsgBox();
         }
@@ -79,9 +79,9 @@ public class TestWinD : MDIEditorWindow {
         if (obj != null)
         {
             string arg = (string) obj;
-            GUI.Label(new Rect(rect.x, rect.y, rect.width, 20), "参数：" + arg);
+            GUI.Label(new Rect(rect.x, rect.y, rect.width, 20), "Parameters：" + arg);
         }
-        if (GUI.Button(new Rect(rect.x, rect.y + rect.height - 20, rect.width, 20), "关闭"))
+        if (GUI.Button(new Rect(rect.x, rect.y + rect.height - 20, rect.width, 20), "shut down"))
         {
             HideMsgBox();
         }

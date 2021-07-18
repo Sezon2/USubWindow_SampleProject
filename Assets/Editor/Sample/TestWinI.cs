@@ -5,7 +5,7 @@ using System.Collections;
 public class TestWinI : MDIEditorWindow
 {
 
-    [MenuItem("SubWindow范例/9.Handle范例")]
+    [MenuItem("SubWindow example/9.Handle example")]
     static void OpenWindow()
     {
         TestWinI.CreateWindow<TestWinI>(typeof (HandleTest), new Vector3(1, 2, 3), 1.06f);

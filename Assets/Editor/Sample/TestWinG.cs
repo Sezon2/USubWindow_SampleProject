@@ -4,7 +4,7 @@ using System.Collections;
 using EditorWinEx.Internal;
 
 /// <summary>
-/// SubWindow自定义窗体、主窗体间的消息通信范例
+/// SubWindow-Example of message communication between custom form and main form
 /// </summary>
 public class TestWinG : MDIEditorWindow {
 
@@ -15,7 +15,7 @@ public class TestWinG : MDIEditorWindow {
         NotifyMainWindow,
     }
 
-    [MenuItem("SubWindow范例/7.自定义窗体、主窗体间的消息通信范例")]
+    [MenuItem("SubWindow example/7.Example of message communication between custom form and main form")]
     static void InitWin()
     {
         TestWinA.CreateWindow<TestWinG>();
@@ -35,7 +35,7 @@ public class TestWinG : MDIEditorWindow {
 
     private void OnListenEvent(string winName)
     {
-        Debug.LogFormat("收到窗口：{0}的消息", winName);
+        Debug.LogFormat("Receive window: {0} message", winName);
     }
 }
 
@@ -61,7 +61,7 @@ class TestDrawerForTestWinG : SubWindowCustomDrawer
 
     public TestDrawerForTestWinG()
     {
-        m_Title = new GUIContent("窗口1");
+        m_Title = new GUIContent("Window 1");
     }
 
     public override void OnEnable()
@@ -80,21 +80,21 @@ class TestDrawerForTestWinG : SubWindowCustomDrawer
     public override void DrawMainWindow(Rect mainRect)
     {
         base.DrawMainWindow(mainRect);
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "向窗口2发送消息"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "Send a message to window 2"))
         {
             this.Broadcast((int)TestWinG.TestWinGMessageID.FromWin1);
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "向主容器窗体发送消息"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "Send a message to the main container form"))
         {
             this.Broadcast<string>((int)TestWinG.TestWinGMessageID.NotifyMainWindow, m_Title.text);
         }
-        GUI.Label(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "收到窗口2的消息内容：" + m_Number);
+        GUI.Label(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "Receive window 2 message content：" + m_Number);
     }
 
     private void OnListenEvent(float number)
     {
         this.m_Number = number;
-        Debug.Log("收到来自窗口2的消息");
+        Debug.Log("Received a message from window 2");
     }
    
 }
@@ -121,7 +121,7 @@ class TestDrawerForTestWinG2 : SubWindowCustomDrawer
 
     public TestDrawerForTestWinG2()
     {
-        m_Title = new GUIContent("窗口2");
+        m_Title = new GUIContent("Window 2");
     }
 
     public override void OnEnable()
@@ -139,20 +139,20 @@ class TestDrawerForTestWinG2 : SubWindowCustomDrawer
     public override void DrawMainWindow(Rect mainRect)
     {
         base.DrawMainWindow(mainRect);
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "向窗口1发送消息"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "Send a message to window 1"))
         {
             this.Broadcast<float>((int) TestWinG.TestWinGMessageID.FromWin2, Random.Range(0f, 100f));
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "向主容器窗体发送消息"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "Send a message to the main container form"))
         {
             this.Broadcast<string>((int)TestWinG.TestWinGMessageID.NotifyMainWindow, m_Title.text);
         }
-        GUI.Label(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "收到窗口1的消息次数：" + m_MessageCount);
+        GUI.Label(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "Number of messages received in window 1：" + m_MessageCount);
     }
 
     private void OnListenEvent()
     {
         this.m_MessageCount++;
-        Debug.Log("收到来自窗口1的消息");
+        Debug.Log("Received a message from window 1");
     }
 }

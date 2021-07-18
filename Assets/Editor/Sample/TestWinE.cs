@@ -4,11 +4,11 @@ using System.Collections;
 using System;
 
 /// <summary>
-/// SubWindow自定义SubWindow对象范例
+/// SubWindow-Example of a custom subwindow object
 /// </summary>
 public class TestWinE : MDIEditorWindow {
 
-    [MenuItem("SubWindow范例/5.自定义SubWindow对象范例")]
+    [MenuItem("SubWindow example/5.Example of a custom subwindow object")]
     static void InitWin()
     {
         TestWinA.CreateWindow<TestWinE>();
@@ -28,7 +28,7 @@ public class TestWinE : MDIEditorWindow {
 
     public void TestFunc()
     {
-        Debug.Log("从SubWindow访问");
+        Debug.Log("Access from subwindow");
     }
 }
 
@@ -68,27 +68,27 @@ class TestDrawerForTestWinE : SubWindowCustomDrawer
     public override void DrawMainWindow(Rect mainRect)
     {
         base.DrawMainWindow(mainRect);
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "改变标题"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y, mainRect.width, 20), "Change the title"))
         {
-            m_Title = new GUIContent("新的标题");
+            m_Title = new GUIContent("New title");
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "显示Toolbar"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 20, mainRect.width, 20), "Show toolbar"))
         {
             m_ToolBar = EWSubWindowToolbarType.Normal;
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "关闭Toolbar"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 40, mainRect.width, 20), "Close toolbar"))
         {
             m_ToolBar = EWSubWindowToolbarType.None;
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 60, mainRect.width, 20), "显示HelpBox"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 60, mainRect.width, 20), "Show help box"))
         {
             SetSubWindowHelpBoxType(SubWindowHelpBoxType.Locker);
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 80, mainRect.width, 20), "关闭HelpBox"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 80, mainRect.width, 20), "Close help box"))
         {
             SetSubWindowHelpBoxType(SubWindowHelpBoxType.None);
         }
-        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 100, mainRect.width, 20), "访问容器窗体"))
+        if (GUI.Button(new Rect(mainRect.x, mainRect.y + 100, mainRect.width, 20), "Access the container form"))
         {
             ((TestWinE) container).TestFunc();
         }
@@ -151,9 +151,9 @@ class TestDrawerForTestWinE2 : SubWindowCustomDrawer, ISubWinCustomMenu, ISubWin
     public void SetLockActive(bool isLockActive)
     {
         if (isLockActive)
-            Debug.Log("窗口上锁");
+            Debug.Log("Window lock");
         else
-            Debug.Log("窗口解锁");
+            Debug.Log("Unlock window");
     }
 
     public void AddCustomMenu(GenericMenu menu)
@@ -165,6 +165,6 @@ class TestDrawerForTestWinE2 : SubWindowCustomDrawer, ISubWinCustomMenu, ISubWin
 
     private void ClickMenu()
     {
-        Debug.Log("按下了菜单");
+        Debug.Log("Menu was pressed");
     }
 }
