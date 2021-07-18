@@ -3,11 +3,11 @@ using UnityEditor;
 using System.Collections;
 
 /// <summary>
-/// SubWindow基本范例
+/// SubWindow-基本例
 /// </summary>
 public class TestWinA : MDIEditorWindow {
 
-    [MenuItem("SubWindow范例/1.基本范例")]
+    [MenuItem("SubWindowの例/1.基本例")]
     static void InitWin()
     {
         TestWinA.CreateWindow<TestWinA>();

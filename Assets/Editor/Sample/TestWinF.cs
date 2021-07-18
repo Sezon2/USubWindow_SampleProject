@@ -5,11 +5,11 @@ using System;
 using EditorWinEx.Internal;
 
 /// <summary>
-/// SubWindow自定义消息弹框范例
+/// SubWindow-カスタムメッセージボックスの例
 /// </summary>
 public class TestWinF : MDIEditorWindow {
 
-    [MenuItem("SubWindow范例/6.自定义消息弹框范例")]
+    [MenuItem("SubWindowの例/6.カスタムメッセージボックスの例")]
     static void InitWin()
     {
         TestWinA.CreateWindow<TestWinF>();
@@ -19,7 +19,7 @@ public class TestWinF : MDIEditorWindow {
     private void SubWinA(Rect main)
     {
         GUI.Label(new Rect(main.x, main.y, main.width, 20), "SubWinA");
-        if (GUI.Button(new Rect(main.x, main.y + 20, main.width, 20), "测试MsgBox"))
+        if (GUI.Button(new Rect(main.x, main.y + 20, main.width, 20), "MsgBoxのテスト"))
         {
             ShowMsgBox(2, null);
         }
