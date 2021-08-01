@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f371f36d-c504-4228-b9a9-960fc01a5f62" name="デフォルト変更リスト" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MDIEditorWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindowLayout.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindowLeaf.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindowNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindowTree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindowTreeWizard.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/GridSubWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/ISubWinCustomMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/ISubWinLock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/PreviewSubWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindowCustomObjectDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindowFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindowHelpBox/SubWindowDockHelpBox.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindowHelpBox/SubWindowHelpBoxBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/SubWindowHelpBox/SubWindowLockerHelpBox.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/Drawer/SubWindowDrawerBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/Drawer/SubWindowMethodDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/Drawer/SubWindowObjectDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/WindowTree/SubWindow/Attribute/SubWindowStyleAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Utils/EditorPrefsEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Utils/EWRectangle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Utils/GUIEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Utils/GUIStyleCache.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/ToolBarTree/ToolBarTree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/ToolBarTree/ToolBarTreeNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Serialization/EWSerializationObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MessageBox/EditorWindowMsgBox.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MessageBox/EWMsgBoxCustomDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MessageBox/EWMsgBoxDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MessageBox/EWMsgBoxMethodDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/MessageBox/EWMsgBoxObjectDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Message/IMessageDispatcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Message/MessageCenter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Drawer/CustomEWComponentDrawerBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Components/EditorWindowComponentBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Components/EditorWindowComponentsInitializer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Components/EWComponentDrawerBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Attribute/EWMsgBoxAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Attribute/EWMsgBoxHandleAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Attribute/EWSubWindowAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Attribute/EWSubWindowHandleAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/EditorWindowEx/Attribute/EWToolBarAttribute.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1w7hXIkaLZv6yFe6zHTUmuqo8Kz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Publish\SubWindowSystem.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\臨時作業フォルダ\_Tools\USubWindow\USubWindow_SampleProject\Publish" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="f371f36d-c504-4228-b9a9-960fc01a5f62" name="デフォルト変更リスト" comment="" />
+      <created>1627815586448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627815586448</updated>
+      <workItem from="1627815600143" duration="1345000" />
+      <workItem from="1627817230403" duration="1289000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
